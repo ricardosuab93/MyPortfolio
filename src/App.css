@@ -1,0 +1,148 @@
+/************ Default Css ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p,
+a,
+li,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+@media (min-width: 1700px) {
+  main .container {
+    max-width: 100%;
+    padding: 0 150px;
+  }
+}
+
+p.success {
+  color: green;
+}
+
+p.danger {
+  color: red;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/************ NAVBAR CSS ************/
+nav{
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.32s ease-in-out;
+}
+
+nav.scrolled {
+  padding: 0px 0;
+  background-color: #121212;
+  padding: 18px 0;
+}
+
+/* Estilos para el botón del menú hamburguesa */
+button.menu-button {
+  /* ...otros estilos... */
+  display: block; /* Para que ocupe todo el ancho en pantallas pequeñas */
+}
+
+/* Estilos para el menú que se muestra al hacer clic en el botón */
+ul.menu-list {
+  display: flex;
+  /* ...otros estilos... */
+}
+
+/************ BANNER CSS ************/
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url('./assets/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+/************ SKILLS CSS ************/
+.skills {
+  /* background-image: radial-gradient(circle, #000000, #25121c, #3e1d39, #4f2d5e, #52428b, #4d56a7, #3c6bc3, #0081de, #0095ea, #00a7f3, #00bafa, #00ccff); */
+  /* background-image: url('./assets/img/color-sharp.png') */
+  /* background-image: radial-gradient(circle, #0066cc, #52428b, #4a2751, #2d1625, #000000); */
+  background-image: radial-gradient(circle, #000000, #2d1625, #4a2751, #52428b, #0066cc);
+  margin-top: 0;
+  padding: 25px 0 25px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/************ FOOTER CSS ************/
+.formcontact{
+  background-image: radial-gradient(circle, #000000, #2d1625, #4a2751, #52428b, #0066cc, #2d1625, #000000);
+  margin-top: 0;
+  padding: 25px 0 25px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/************ FOOTER CSS ************/
+.footer {
+  background-image: url('../src/assets/img/footer-bg.png');
+  padding: 0 0 25px 0;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
